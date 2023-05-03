@@ -1,4 +1,12 @@
+// import 'dart:html';
+// import 'dart:js_util';
+
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import 'package:shortupdates/view/signin_screen.dart';
+import 'package:shortupdates/view/widget/showingurl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NewsContainer extends StatelessWidget {
   String imgUrl;
@@ -22,7 +30,7 @@ class NewsContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.network(
-              height: 400,
+              height: 200,
               width: MediaQuery.of(context).size.width,
               imgUrl,
               fit: BoxFit.cover),
@@ -54,7 +62,11 @@ class NewsContainer extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: ElevatedButton(
                     onPressed: () {
-                      print("Going to $newsUrl");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  DetailViewScreen(newsUrl: newsUrl)));
                     },
                     child: Text("Read more")),
               ),

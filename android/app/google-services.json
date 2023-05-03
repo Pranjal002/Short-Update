@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75332818250",
+    "project_id": "signin-shortupdates",
+    "storage_bucket": "signin-shortupdates.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75332818250:android:d20541580f5d270da35db3",
+        "android_client_info": {
+          "package_name": "com.example.shortupdates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75332818250-bjn05355ne79re00gapfl1jug97ma01n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6cUAXbqsG3EAYmoz-XrahSE180PMmUiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75332818250-bjn05355ne79re00gapfl1jug97ma01n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
